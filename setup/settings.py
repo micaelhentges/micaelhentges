@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        "NAME": "APISilos",
+        "NAME": "APISilosV1",
         "USER": "postgres",
         "PASSWORD": "K3pl3rSync2022*",
         "HOST": "127.0.0.1",

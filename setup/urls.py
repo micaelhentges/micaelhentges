@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from termometriaV1.views import SilosV1ViewSet
+from termometriaV1.views import SilosV1ViewSet, SecHorimetrosViewSet
 from rest_framework import routers
 
 router = routers.DefaultRouter()
 router.register('silosV1', SilosV1ViewSet, basename='Silos V1')
+router.register('SecHorimetros', SecHorimetrosViewSet, basename='SecHorimetros')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
