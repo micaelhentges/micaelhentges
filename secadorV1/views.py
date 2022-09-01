@@ -1,12 +1,12 @@
 from rest_framework import viewsets
-from termometriaV1.models import SiloV1
-from termometriaV1.serializer import SiloV1Serializer
+from secadorV1.models import SecHorimetros
+from secadorV1.serializer import SecHorimetrosSerializer
 from rest_framework.authentication import BasicAuthentication
 from rest_framework.permissions import IsAuthenticated
 
-class SilosV1ViewSet(viewsets.ModelViewSet):
+class SecHorimetrosViewSet(viewsets.ModelViewSet):
     """Exibindo todos os silos"""
-    queryset = SiloV1.objects.all()
-    serializer_class = SiloV1Serializer
+    queryset = SecHorimetros.objects.all()
+    serializer_class = SecHorimetrosSerializer
     authentication_classes = [BasicAuthentication]
     permission_classes = [IsAuthenticated]

@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from termometriaV1.views import SilosV1ViewSet, SecHorimetrosViewSet
+from termometriaV1.views import SilosV1ViewSet
+from secadorV1.views import SecHorimetrosViewSet
 from rest_framework import routers
 
 router = routers.DefaultRouter()
