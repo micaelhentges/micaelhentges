@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'termometriaV1',
+    'termometriaV2',
     'secadorV1',
+    'secadorV2',
 ]
 
 MIDDLEWARE = [
